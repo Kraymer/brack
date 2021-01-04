@@ -42,6 +42,8 @@ If you prefer to use a custom regex, edit your `.pre-commit-config.yaml` to give
         args: [-r, "<YOUR_REGEX>"]
 ~~~
 
+Beware that regex must be compliant with [POSIX Basic Regular Syntax](https://en.wikipedia.org/wiki/Regular_expression#POSIX).
+
 ### Alternative
 
 [no_commit_to_branch](https://github.com/pre-commit/pre-commit-hooks/blob/master/pre_commit_hooks/no_commit_to_branch.py) is a hook provided with pre-commit that accomplishes the same thing but the logic is reversed : you define a regex that matches the branches you want NOT authorize commit to.  
