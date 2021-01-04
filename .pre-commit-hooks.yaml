@@ -1,0 +1,8 @@
+
+-   id: brack
+    name: brack
+    description: The relentless git branch name acknowledger
+    entry: pre_commit_hooks/brack
+    language: script
+    always_run: true
+    pass_filenames: false
