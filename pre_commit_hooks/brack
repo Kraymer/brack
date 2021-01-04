@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+# The Relentless Git Branch Name Acknowledger
+
+LC_ALL=C
+
+enforce_branch_name() {
+    local_branch="$(git rev-parse --abbrev-ref HEAD)"
+    echo $valid_branch_regex
+    message="""
+    Branch name must adhere to this regex: $valid_branch_regex.
+    Your commit will be rejected. You should rename your branch to a valid name and try again."""
+
+    if [[ ! $local_branch =~ $valid_branch_regex ]]
+    then
+        echo "$message"
+        exit 1
+    fi
+
+    exit 0
+}
+
+main() {
+    valid_branch_regex="^(feature|bugfix|improvement|library|prerelease|release|hotfix)\/[a-z0-9._-]+$"
+
+    while [ $# -gt 0 ];do
+        case "$1" in
+            -h|--help)
+                usage;
+                exit 0;;
+            -r|--regex)
+                shift;
+                valid_branch_regex=$1
+                ;;
+            --)
+                shift;
+                break
+                ;;
+        esac
+        shift
+    done
+    enforce_branch_name
+}
+main "$@"
