@@ -1,5 +1,5 @@
 <h2 align="center">
-    <img alt="Logo" src="https://github.com/Kraymer/public/blob/master/brack/logo.png" width=400></img><br>
+    <img alt="Logo" src="https://github.com/Kraymer/pub/blob/master/brack/logo.png" width=400></img><br>
     BRACK: The Relentless Git Branch Name Acknowledger
 </h2>
 
