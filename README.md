@@ -1,11 +1,11 @@
 <h2 align="center">
-    <img alt="Logo" src="https://github.com/kraymer/brack/docs/logo.png" width=400></img><br>
+    <img alt="Logo" src="https://github.com/Kraymer/brack/raw/master/docs/logo.png" width=400></img><br>
     BRACK: The Relentless Git Branch Name Acknowledger
 </h2>
 
 
 <p align="center">
-<a href="https://github.com/kraymer/brack/blob/master/LICENSE"><img alt="License: MIT" src="https://github.com/kraymer/brack/docs/license.svg"></a>
+<a href="https://github.com/kraymer/brack/blob/master/LICENSE"><img alt="License: MIT" src="https://github.com/kraymer/brack/raw/master/docs/license.svg"></a>
 <a href="https://ko-fi.com/kraymer"><img alt="Donate" src="https://img.shields.io/badge/-%E2%99%A1%20Donate%20-ff69b4"></img></a>
 </p>
 
